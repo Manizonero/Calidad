@@ -1,0 +1,121 @@
+/* === ESTILOS GENERALES === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    text-align: center;
+    color: #000000;
+}
+
+/* === ENCABEZADO === */
+header {
+    background: #4a4a4a;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* === SECCIONES PRINCIPALES === */
+.procesos {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+h2 {
+    color: #222;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* === CONTENEDOR DE BOTONES === */
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* === CADA PROCESO === */
+.proceso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    text-align: center;
+}
+
+/* === ICONOS === */
+.proceso img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 8px;
+    border: 10px double #22aec7;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.proceso img:hover {
+    transform: scale(1.1);
+}
+
+/* === BOTONES === */
+.btn {
+    display: inline-block;
+    background: white;
+    color: #4a4a4a;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 2px solid #4a4a4a;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    width: 140px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #4a4a4a;
+    color: white;
+}
+
+.btn:focus {
+    outline: 3px solid #22aec7;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+    background: #222;
+    color: #f1f1f1;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* === ESTILOS RESPONSIVOS === */
+@media (max-width: 768px) {
+    .botones {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .proceso {
+        max-width: 50%;
+        margin: 0 auto; /* Centrar horizontalmente */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Asegura que todo esté centrado */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+
+    .btn {
+        font-size: 16px; /* Aumenta el tamaño del texto en los botones */
+        padding: 8px 14px; /* Ajusta el padding para mayor comodidad */
+    }
+}
